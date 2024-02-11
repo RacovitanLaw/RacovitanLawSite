@@ -11,7 +11,7 @@
             <time>{{ page.date | date(format="%Y-%m-%d") }}</time>
             {% endif -%}
             <br />
-            <span>{{ page.reading_time }} minute read</span>
+            <!-- <span>{{ page.reading_time }} minute read</span> -->
             {% if page.draft %}
             <span class="draft-label">DRAFT</span>
             {% endif %}
@@ -83,7 +83,7 @@
         <p id="banner-home-subtitle">{{ desc.text }}</p>
     </div>
     <div class="image-container-home">
-        <img alt = "the owner" class="banner-home-img" src="{{ desc.img }}" />
+        <img alt="the owner" class="banner-home-img" src="{{ desc.img }}" />
     </div>
 </div>
 {% endmacro content %}
@@ -219,7 +219,9 @@
     {% for page in pages %}
     <li class="post">
         <a href="{{ page.permalink }}">{{ page.title }}</a>
+        {%- if page.date %}
         <span class="meta">{{ page.date | date(format="%Y-%m-%d") }}</span>
+        {% endif %}
     </li>
     {% endfor %}
 </ul>

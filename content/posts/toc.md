@@ -1,6 +1,5 @@
 +++
 title = "Table of Contents Test"
-date = "2022-01-02"
 +++
 
 # Heading 1

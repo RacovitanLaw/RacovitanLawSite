@@ -1,8 +1,13 @@
 {% import "macros/macros.html" as post_macros %}
 
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 {% include "partials/header.html" %}
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ get_url(path="styles/styles.css") | safe }}" />
+</head>
 
 <body>
     {% include "partials/nav.html" %}
@@ -10,11 +15,17 @@
     <div class="content">
         {# Post page is the default #}
         {% block main_content %}
-            Nothing here?!
+        Nothing here?!
         {% endblock main_content %}
     </div>
 
+    <div class="flex items-center justify-center">
+        <img src="./images/RacovitanAttorneyAtLaw.webp" alt="Racovitan Attorney At Law Logo"
+            class="w-4/5 object-scale-down">
+    </div>
+
     {% include "partials/footer.html" %}
+
 </body>
 
 </html>

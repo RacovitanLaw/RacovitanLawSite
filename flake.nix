@@ -19,7 +19,8 @@
           devShells.default = mkShell {
             buildInputs = [ 
               zola
-              # yarn # https://www.printlnhello.world/blog/zola-tailwindcss/ 
+              nodejs
+              yarn # https://www.printlnhello.world/blog/zola-tailwindcss/
             ];
           };
         }
