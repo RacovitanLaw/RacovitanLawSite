@@ -10,10 +10,11 @@
             {% endif %}
         </nav>
         <nav>
-            <span className="desktop-only">This blog is powered by 
-                <a href = "https://getzola.org/" rel="noopener noreferrer" target="_blank">Zola</a> with theme by
-                <a href = "https://syedzayyan.com/" rel="noopener noreferrer" target="_blank">SZM</a></span>
+            <span className="desktop-only">This site is powered by
+                <a href="https://getzola.org/" rel="noopener noreferrer" target="_blank">Zola</a> with theme by
+                <a href="https://syedzayyan.com/" rel="noopener noreferrer" target="_blank">SZM</a></span>
         </nav>
     </section>
-    <script src="{{ get_url(path='js/main.js', trailing_slash=false) | safe }}"/></script>
+    <script src="{{ get_url(path='js/main.js', trailing_slash=false) | safe }}" />
+    </script>
 </footer>

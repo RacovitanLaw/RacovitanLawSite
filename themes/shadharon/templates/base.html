@@ -6,7 +6,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{ get_url(path="styles/styles.css") | safe }}" />
+    <link rel="stylesheet" href="{{ get_url(path='styles/styles.css') | safe }}" />
 </head>
 
 <body>
@@ -20,8 +20,11 @@
     </div>
 
     <div class="flex items-center justify-center">
-        <img src="./images/RacovitanAttorneyAtLaw.webp" alt="Racovitan Attorney At Law Logo"
+        <img src="/images/RacovitanAttorneyAtLaw.webp" alt="Racovitan Attorney At Law Logo"
             class="w-4/5 object-scale-down">
+    </div>
+    <div class="flex items-center justify-center">
+        <img src="/images/Andra2.webp" alt="Andra Racovitan Portrait" class="w-4/5 object-scale-down">
     </div>
 
     {% include "partials/footer.html" %}

@@ -3,6 +3,10 @@
 var themeSwitcher = document.querySelector('.theme-switcher input');
 var currentTheme = localStorage.getItem('theme');
 
+if (!currentTheme) {
+    currentTheme = 'light'
+}
+
 // check what is current theme right now and activate it
 if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
@@ -17,10 +21,10 @@ function switchTheme(e) {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
     }
-    else {        
+    else {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
-    }    
+    }
 }
 
 // event listener on checkbox change
